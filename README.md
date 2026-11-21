@@ -37,6 +37,7 @@ flowchart LR
 | **Repository** | `UserRepository` | Spring Data JPA CrudRepository managing user persistence and balance updates. |
 | **Conduit** | `DatabaseConduit` | Abstraction layer isolating business logic from direct repository operations. |
 | **Incentive API** | `services/transaction-incentive-api.jar` | Standalone microservice evaluating promotional incentives on transactions. |
+| **Service** | `TransactionProcessingService` | Validates non-negative funds, enforces atomic balance debits/credits, and incorporates external incentive payouts. |
 
 ---
 
